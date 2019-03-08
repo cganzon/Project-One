@@ -3,4 +3,6 @@ body {
       background-size: cover;
   }
 
-  
+  #LFWSearchParams{
+      background-color: wheat;
+  }
