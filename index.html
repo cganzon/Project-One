@@ -11,44 +11,47 @@
     <link rel="stylesheet" href="assets/css/login_signup_stylesheet.css">
 </head>
 
-<body background="assets/images/backgroundMaybe.jpeg">
-    <div class="container" id="logInCard">
-        <div class="row justify-content-center">
-            <div class="col-sm-4">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Log In</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="sign_up_firstPass.html">Sign Up</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Log In!</h5>                        
-                        <a href="userProfile.html" id="submitBtn" class="btn btn-dark">Submit</a>
-                    </div>
+<body>
+    <div class="container">
+        <div class="row justify-content-center vertical-center ">
+            <div style="width: 400px !important;" class="card  logmein">
+                <div class="men"><img src="assets/images/profile/men.png"></div>
+
+                <div class="card-body  ">
+                    <form>
+                        <div style="margin-top: 30px;" class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <a class="text-color" href="sign_up_firstPass.html">Register new user</a>
+                        <a class="text-color" href="forgotPassword.html">Forgot your password?</a>
+                        <br>
+                        <button type="submit" class="btn btn-primary float-right mt-4 bg-form px-4">Login</button>
+                    </form>
                 </div>
-                <!-- col end -->
             </div>
-            <!-- row end -->
         </div>
-        <!-- container end -->
     </div>
     <!-- footer -->
-    
+
     <div class="container">
-        <div class="row" id = "logInFooter">
+        <div class="row" id="logInFooter">
             <div class="col-md-5">
-                <img src="assets/images/github.gif" id = "gitGiph" alt="">
+                <img src="assets/images/github.gif" id="gitGiph" alt="">
             </div>
             <div class="col-md-5">
-                <img src="assets/images/indeed.png" id = "indeedGiph" alt="">
+                <img src="assets/images/indeed.png" id="indeedGiph" alt="">
             </div>
             <div class="col-md-2">
-                <img src="assets/images/usa jobs.jpg" id = "usaGiph" alt="">
+                <img src="assets/images/usa jobs.jpg" id="usaGiph" alt="">
             </div>
         </div>
 
