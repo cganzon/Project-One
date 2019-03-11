@@ -147,7 +147,7 @@ background-color: white;
 }
 #logInFooter{
 background-color: clear;
-position: fixed;
+position: static;
 }
 
 #gitGiph{
