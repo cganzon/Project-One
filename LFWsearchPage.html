@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/LFWresultspagestylesheet.css">
 </head>
 
-<body background="assets/images/backgroundMaybe.jpeg">
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Log-in/Sign Up</a>
@@ -27,31 +27,70 @@
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="userProfile.html">Your Profile!</a>
+                    <a class="nav-link" href="sign_up_firstPass.html">Your Profile!</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="LFWSearchParams" class="container">
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Job Title</label>
-                <input type="email" class="form-control" id="jobTitleSearchInput" placeholder="job title goes here">
+
+    <!-- start search params -->
+    <div class="container">
+        <div class="row justify-content-center vertical-center ">
+            <div style="width: 400px !important;" class="card  logmein">
+                <div class="men"><img src="assets/images/profile/men.png"></div>
+
+                <div class="card-body  ">
+                    <form>
+                        <div style="margin-top: 30px;" class="form-group">
+                            <label for="searchParam">Job Title Keyword</label>
+                            <input type="job title" class="form-control" id="jobTitleSearchParam"
+                                aria-describedby="SearchParam" placeholder="job title goes here">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchParam">Location</label>
+                            <input type="location" class="form-control" id="locationSearchParam"
+                                placeholder="location goes here">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchParam">Salary</label>
+                            <input type="salary" class="form-control" id="salarySearchParam"
+                                placeholder="salary goes here">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary float-right mt-4 bg-form px-4">Take a
+                            look!</button>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Years of Experience</label>
-                <input type="email" class="form-control" id="yearsOfExperienceSearchInput"
-                    placeholder="years of experience goes here">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Location</label>
-                <input type="email" class="form-control" id="locationSearchInput" placeholder="location goes here">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Rate/Yr.</label>
-                <input type="email" class="form-control" id="yearlyRateSearchInput" placeholder="rate / year goes here">
-            </div>
-        </form>
+        </div>
+    </div>
+
+
+    <!-- end search params -->
+
+
+    <!-- <div id="LFWSearchParams" class="container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Job Title</label>
+                    <input type="email" class="form-control" id="jobTitleSearchInput" placeholder="job title goes here">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Years of Experience</label>
+                    <input type="email" class="form-control" id="yearsOfExperienceSearchInput"
+                        placeholder="years of experience goes here">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Location</label>
+                    <input type="email" class="form-control" id="locationSearchInput" placeholder="location goes here">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Rate/Yr.</label>
+                    <input type="email" class="form-control" id="yearlyRateSearchInput"
+                        placeholder="rate / year goes here">
+                </div>
+            </form>
+        </div>
     </div>
     <div class="container" id="resultsPageContainer">
         <table class="table">
@@ -74,21 +113,22 @@
                 </tr>
 
                 </tr>
-                
+
             </tbody>
         </table>
-        
-    </div>
+
+     -->
+    <!-- start footer -->
     <div class="container">
-        <div class="row" id = "logInFooter">
+        <div class="row" id="logInFooter">
             <div class="col-md-5">
-                <img src="assets/images/github.gif" id = "gitGiph" alt="">
+                <img src="assets/images/github.gif" id="gitGiph" alt="">
             </div>
             <div class="col-md-5">
-                <img src="assets/images/indeed.png" id = "indeedGiph" alt="">
+                <img src="assets/images/indeed.png" id="indeedGiph" alt="">
             </div>
             <div class="col-md-2">
-                <img src="assets/images/usa jobs.jpg" id = "usaGiph" alt="">
+                <img src="assets/images/usa jobs.jpg" id="usaGiph" alt="">
             </div>
         </div>
 
