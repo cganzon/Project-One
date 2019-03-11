@@ -1,8 +1,23 @@
 body {
       background-repeat: no-repeat;
       background-size: cover;
+     
   }
 
   #LFWSearchParams{
       background-color: wheat;
   }
+  #logInFooter{
+    background-color: clear
+    ;
+  }
+  #gitGiph{
+    border-radius: 50%;
+  }
+  #indeedGiph{
+    border-radius: 50%;
+  }
+  #usaGiph{
+    border-radius: 50%;
+  }
+      
