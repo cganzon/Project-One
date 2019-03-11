@@ -10,6 +10,9 @@ var config = {
 firebase.initializeApp(config);
 // =================================  
 
+function createListing(title, location, salary) {
+    $("")
+}
 
 function joobleSearch(title, location, salary) {
     
@@ -27,14 +30,10 @@ function joobleSearch(title, location, salary) {
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     //Callback when the state changes
-    http.onreadystatechange = function() {
+    http.onreadystatechange = function apiResponse() {
         if(http.readyState == 4 && http.status == 200) {
             var jsonResponse = JSON.parse(http.responseText);
-            console.log(jsonResponse);
-            for (var i = 0; i < jsonResponse.length; i++) {
-            var jobTitle = jsonResponse.jobs[i].title;
-            console.log(jobTitle);
-            };
+            // console.log(jsonResponse);
         };
     };
     //Send request to the server
