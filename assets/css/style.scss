@@ -1,0 +1,66 @@
+$textColor: rgb(112, 143, 189);
+$bgColorItem: rgb(112, 143, 189);
+body{
+    margin: 0;
+    padding: 0;
+    color: $textColor;
+    background: url("../images/bg2.png") ;
+
+}
+
+.text-color{
+   color: $textColor;
+}
+
+.bg-color{
+    background-color: $bgColorItem;
+}
+
+
+.side-menu{
+    background-color: rgb(42, 49, 61);
+    img{
+        width: 200px;
+        margin: 0px auto;
+    }
+}
+
+.vertical-center {
+    min-height: calc(100vh - 100px); 
+    display: flex;
+    align-items: center;
+  }
+.bg-form{
+    background-color: $bgColorItem;
+    border-color: $bgColorItem; 
+    &:hover{
+        background-color: darken($bgColorItem, 20%);        
+        border-color: darken($bgColorItem, 20%);        
+    }
+}
+
+.logmein{
+        border-radius: 20px  65px!important; 
+        background-color: rgb(42, 49, 61) !important;
+        position: relative;
+        border: 2px solid rgb(255, 255, 255) ;
+        a{text-decoration: none;}
+        a:nth-child(3) { float: right; }
+        hr{
+              border: .5px solid darken($textColor,20%)
+          }  
+.men {
+            text-align: center;
+            margin: 0 !important;
+            padding: 0 !important; 
+img{
+                position: absolute; 
+                z-index: 999; 
+                background-color: rgb(255, 255, 255); 
+                width: 100px; 
+                top: -60px;
+                left: calc(100%/2 - 50px);
+                border-radius: 50px;
+            }
+        }      
+    }

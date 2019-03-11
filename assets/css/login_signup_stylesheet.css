@@ -1,17 +1,18 @@
 body {
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #3f5c88;
   }
 
-  .navbar {
+.navbar {
     overflow: hidden;
     background-color: #333;
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
+}
   
-  .navbar a {
+.navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -19,21 +20,21 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
   
   .navbar a:hover {
     background: #f1f1f1;
     color: black;
-  }
+}
   
-  .navbar a.active {
+.navbar a.active {
     background-color: #4CAF50;
     color: white;
-  }
+}
 
 
   /* center login box */
-  #logInCard{
+#logInCard{
     padding: 170px 0;
     margin: auto;
     width: 100%;
@@ -44,9 +45,9 @@ body {
     width: 100%;
 }
 #logInFooter{
-  background-color: clear
-  ;
+  background-color: clear;
 }
+
 #gitGiph{
   border-radius: 50%;
 }
@@ -56,6 +57,79 @@ body {
 #usaGiph{
   border-radius: 50%;
 }
+
+body{
+  margin:0;
+  padding:0;
+  color:#708fbd;
+}
+  
+.text-color{
+olor:#708fbd
+}
+
+.bg-color{
+background-color:#708fbd
+}
+
+.side-menu{
+background-color:#2a313d
+}
+
+.side-menu img{
+width:200px;margin:0px auto
+}
+
+.vertical-center{
+min-height:calc(100vh - 100px);
+display:flex;
+align-items:center
+}
+
+.bg-form{
+background-color:#708fbd;
+border-color:#708fbd
+}
+
+.bg-form:hover{
+background-color:#3f5c88;
+border-color:#3f5c88
+}
+
+.logmein{
+border-radius:20px 65px !important;
+background-color:#2a313d !important;
+position:relative;
+border:2px solid #fff
+}
+
+.logmein a{
+text-decoration:none
+}
+
+.logmein a:nth-child(3){
+float:right
+}
+
+.logmein hr{
+  border:0.5px solid #3f5c88
+}
+
+.logmein .men{
+  text-align:center;
+  margin:0 !important;
+  padding:0 !important
+}
+
+.logmein .men img{
+position:absolute;
+z-index:999;
+background-color:#fff;
+width:100px;
+top:-60px;
+left:calc(100%/2 - 50px);
+border-radius:50px}
+
     
 
     
