@@ -3,3 +3,6 @@
     margin: 30px;
     align-content: center;
 }
+img {
+    border-radius: 50%;
+  }

@@ -43,6 +43,19 @@ body {
     margin: auto;
     width: 100%;
 }
+#logInFooter{
+  background-color: clear
+  ;
+}
+#gitGiph{
+  border-radius: 50%;
+}
+#indeedGiph{
+  border-radius: 50%;
+}
+#usaGiph{
+  border-radius: 50%;
+}
     
 
     
