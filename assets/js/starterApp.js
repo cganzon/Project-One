@@ -10,15 +10,11 @@ var config = {
 firebase.initializeApp(config);
 // =================================  
 
-function createListing(title, location, salary) {
-    $("")
-}
-
 function joobleSearch(title, location, salary) {
     
     var url = "https://us.jooble.org/api/";
     var key = "63e7fe87-63ba-4b2b-9b1a-35a3e3d71f97";
-    var params = "{keywords: 'Web Developer', location: 'San Diego, CA', salary: '60000'}"
+    var params = "{keywords: " + title + ", location: " + location + ", salary: '60000'}";
     // get parameters from user's input
 
     //create xmlHttpRequest object
@@ -41,14 +37,6 @@ function joobleSearch(title, location, salary) {
 }
 
 joobleSearch();
-joobleSearch();
-
-// firebase connection
-var database = firebase.database();
-
-
-
-
 
 $("#signUp").on("click", function (event) {
   //   // prevent default behaviour
@@ -71,7 +59,7 @@ $("#signUp").on("click", function (event) {
     email: email,
     password: password,
     resume: resumeLink,
-    description: skillDescription,
+    description: skillDescription
   });
 
 
