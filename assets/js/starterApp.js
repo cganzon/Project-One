@@ -75,7 +75,7 @@ function joobleSearch(title, location, salary) {
       var jsonResponse = JSON.parse(http.responseText);
       console.log(jsonResponse);
       // need to display title, location, salary, and jpb link in cards on results page
-      database.ref("/" + title + " listings").push(jsonResponse);
+      database.ref("/user/" + title + " listings").push(jsonResponse);
     }
   }
   //Send request to the server
