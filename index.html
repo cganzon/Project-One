@@ -43,6 +43,11 @@
                 </li>
                 <li>
                     <a href="#">Job Favorites</a>
+
+                </li>
+                <li>
+                    <a href="#">My Account</a>
+
                 </li>
                 <li>
                     <a href="#">My Account</a>
@@ -80,6 +85,18 @@
 
             </nav>
 
+
+            <form class="form-inline searchBar">
+                <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Keywords"
+                    aria-label="Search">
+                <input class="form-control mr-sm-2" id="city-input" type="search" placeholder="City, State"
+                    aria-label="Search">
+                <button class="btn  my-1 mx-sm-0 mx-md-2" id="searchListings" type="submit">Search</button>
+            </form>
+
+            <div class="row" id="results-div">
+                <div class="col-md-9 mx-4 searchResult">
+
             <form class="form-inline searchBar">
                 <input class="form-control mr-sm-2" type="search" placeholder="keywords" aria-label="Search">
                 <input class="form-control mr-sm-2" type="search" placeholder="city or zipcode" aria-label="Search">
@@ -104,6 +121,7 @@
                         </div>
                     </div>
 
+
                     <!-- New Card -->
                     <div class="card">
                         <div class="card-header">
@@ -121,15 +139,25 @@
                     </div>
 
                 </div>
+            </div>
+            <div class="col-md-2 ml-4 ">
+                <div class="card filterBox">
+                    <div class="card-body">
+
+
+
+                </div>
                 <div class="col-md-2 ml-4 ">
                     <div class="card filterBox">
                         <div class="card-body">
 
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
 
     </div>
     <div class="container">
@@ -137,11 +165,19 @@
             <div class="col-sm-4 text-center">
                 <a href="http://www.github.com"> <img src="assets/images/github.gif" id="gitImg" alt="github"></a>
             </div>
+
+            <div class="col-md-5">
+                <img src="assets/images/geoip.jpg" id="geoIpImg" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="assets/images/jooble.png" id="joobleImg" alt="">
+
             <div class="col-sm-4 text-center">
                 <a href="https://www.geoip.co.uk/"><img src="assets/images/geoip.jpg" id="geoIpImg" alt="geoip"></a>
             </div>
             <div class="col-sm-4 text-center">
                 <a href="https://us.jooble.org/"><img src="assets/images/jooble.png" id="joobleImg" alt="jooble"></a>
+
             </div>
         </div>
 
@@ -168,6 +204,11 @@
             });
         });
     </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/starterApp.js"></script>
+    <script src="assets/js/jooble.js"></script>
 </body>
 
 </html>
