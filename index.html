@@ -88,10 +88,10 @@
                     aria-label="Search">
                 <input class="form-control mr-sm-2" id="city-input" type="search" placeholder="City, State"
                     aria-label="Search">
-                <button class="btn  my-1 mx-sm-0 mx-md-2" id="searchLisings" type="submit">Search</button>
+                <button class="btn  my-1 mx-sm-0 mx-md-2" id="searchListings" type="submit">Search</button>
             </form>
 
-            <div class="row">
+            <div class="row" id="results-div">
                 <div class="col-md-9 mx-4 searchResult">
                     <!-- New Card -->
                     <div class="card">
@@ -108,33 +108,17 @@
                             <b>Date posted: </b> 3/11/2019 <br>
                         </div>
                     </div>
-
-                    <!-- New Card -->
-                    <div class="card">
-                        <div class="card-header">
-                            <b>Job Title</b>
-                        </div>
-                        <div class="card-body">
-                            <b>Job Description</b>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis temporibus tempore
-                                officia inventore illum quo nulla repellendus esse cumque aliquid. Assumenda at sed,
-                                veritatis distinctio non voluptate natus molestias unde?</p>
-                            <b>Salary: </b> 45/h <br>
-                            <b>Job type: </b>Full Time<br>
-                            <b>Date posted: </b> 3/11/2019 <br>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="col-md-2 ml-4 ">
-                    <div class="card filterBox">
-                        <div class="card-body">
+            </div>
+            <div class="col-md-2 ml-4 ">
+                <div class="card filterBox">
+                    <div class="card-body">
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </div>
     <div class="container">
@@ -177,6 +161,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/starterApp.js"></script>
+    <script src="assets/js/jooble.js"></script>
 </body>
 
 </html>
