@@ -47,16 +47,14 @@ width: 100%;
 #logInFooter{
 background-color: clear;
 bottom: 0;
-
 }
-
-#gitGiph{
+#gitImg{
 border-radius: 50%;
 }
-#indeedGiph{
+#geoIpImg{
 border-radius: 50%;
 }
-#usaGiph{
+#joobleImg{
 border-radius: 50%;
 }
 
@@ -147,7 +145,7 @@ background-color: white;
 }
 #logInFooter{
 background-color: clear;
-position: fixed;
+position: static;
 }
 
 #gitGiph{

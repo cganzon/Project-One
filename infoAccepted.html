@@ -37,49 +37,37 @@
                 <div class="men"><img src="assets/images/profile/men.png"></div>
 
                 <div class="card-body  ">
-                    <form>
-                        <div style="margin-top: 30px;" class="form-group">
-                            <label for="searchParam">Job Title Keyword</label>
-                            <input type="text" class="form-control" id="jobTitleSearchParam"
-                                aria-describedby="SearchParam" placeholder="job title goes here">
-                        </div>
-                        <div class="form-group">
-                            <label for="searchParam">Location</label>
-                            <input type="text" class="form-control" id="locationSearchParam"
-                                placeholder="location goes here">
-                        </div>
-                        <div class="form-group">
-                            <label for="searchParam">Salary</label>
-                            <input type="text" class="form-control" id="salarySearchParam"
-                                placeholder="salary goes here">
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary float-right mt-4 bg-form px-4" id="lfw-button">Take a look!</button>
-                    </form>
+                   <br>
+                    <h1>User info added to database, nice!</h1>
+                    <button onclick="goBack()" type="reset"
+                        class="btn btn-primary float-right mt-4 bg-form px-4 ml-4">back</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- go back function -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <!-- !! -->
 
-
-
-
-
-    <!-- start footer -->
     <div class="container">
         <div class="row" id="logInFooter">
             <div class="col-md-5">
-                <img src="assets/images/github.gif" id="gitImg" alt="">
+                <img src="assets/images/github.gif" id="gitGiph" alt="">
             </div>
             <div class="col-md-5">
-                <img src="/Users/apple/Desktop/Project-One/assets/images/geoip.jpg" id = "geoIpImg" alt="">
+                <img src="assets/images/indeed.png" id="indeedGiph" alt="">
             </div>
             <div class="col-md-2">
-                <img src="/Users/apple/Desktop/Project-One/assets/images/jooble.png" id = "joobleImg" alt=""
+                <img src="assets/images/usa jobs.jpg" id="usaGiph" alt="">
             </div>
         </div>
 
     </div>
+
 
 
 
@@ -91,8 +79,6 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/starterApp.js"></script>
-
-
 </body>
 
 </html>

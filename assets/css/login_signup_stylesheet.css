@@ -47,15 +47,17 @@ body {
 #logInFooter{
   background-color: clear;
 }
-
-#gitGiph{
+#gitImg{
   border-radius: 50%;
+  padding:10px 0;
 }
-#indeedGiph{
+#geoIpImg{
   border-radius: 50%;
+  padding:10px 0;
 }
-#usaGiph{
+#joobleImg{
   border-radius: 50%;
+  padding:10px 0;
 }
 
 body{
