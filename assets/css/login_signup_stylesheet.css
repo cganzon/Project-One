@@ -46,18 +46,16 @@ body {
 }
 #logInFooter{
   background-color: clear;
- 
 }
-
+#gitImg{
+  border-radius: 50%;
+  padding:10px 0;
+}
 #geoIpImg{
   border-radius: 50%;
   padding:10px 0;
 }
 #joobleImg{
-  border-radius: 50%;
-  padding:10px 0;
-}
-#usaGiph{
   border-radius: 50%;
   padding:10px 0;
 }
