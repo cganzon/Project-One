@@ -8,10 +8,9 @@ body {
       background-color: wheat;
   }
   #logInFooter{
-    background-color: clear
-    ;
+    background-color: clear;
   }
-  #gitGiph{
+  #gitImg{
     border-radius: 50%;
   }
   #geoIpImg{
