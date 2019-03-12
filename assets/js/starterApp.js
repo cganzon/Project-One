@@ -57,7 +57,8 @@ $("#lfw-button").on("click", function (event) {
 function joobleSearch(title, location, salary) {
   var url = "https://us.jooble.org/api/";
   var key = "63e7fe87-63ba-4b2b-9b1a-35a3e3d71f97";
-  // var params = "{ keywords: 'Web Developer', location: 'San Diego', salary: '60000'}";
+  // params temp variable used to construct actual params variable with user's input
+  // var params = "{ keywords: 'Job title', location: 'Location', salary: 'number'}";
   var params = "{keywords: '" + title + "', location: '" + location + "', salary: '" + salary + "'}";
 
   //create xmlHttpRequest object
@@ -73,7 +74,7 @@ function joobleSearch(title, location, salary) {
     if (http.readyState == 4 && http.status == 200) {
       var jsonResponse = JSON.parse(http.responseText);
       // console.log(jsonResponse);
-      return jsonResponse;
+      // need to display title, location, salary, and jpb link in cards on results page
     }
   }
   //Send request to the server
