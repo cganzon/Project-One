@@ -68,16 +68,11 @@ $("#signUp").on("click", function (event) {
     resume: resumeLink,
     description: skillDescription,
   });
-  //   sessionStorage.setItem("firstName", fName);
-  //   sessionStorage.setItem("middleName", mName);
-  //   sessionStorage.setItem("lastName", lName);
-  //   sessionStorage.setItem("email", email);
-  //   sessionStorage.setItem("password", password);
-  //   sessionStorage.setItem("pNumber", pNumber);
-  //   sessionStorage.setItem("resumeURL", resumeLink);
-  //   sessionStorage.setItem("skills", skillDescription);
-
-  //   console.log(fName);
 
 
-})
+
+});
+
+
+
+
