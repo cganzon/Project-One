@@ -1,10 +1,11 @@
 $textColor: rgb(112, 143, 189);
 $bgColorItem: rgb(112, 143, 189);
+$bgTemplate: rgb(42, 49, 61);
 body{
     margin: 0;
     padding: 0;
     color: $textColor;
-    background: url("../images/bg2.png") ;
+    background: lighten($bgTemplate, 70%);
 
 }
 
@@ -39,7 +40,7 @@ body{
     }
 }
 
-.logmein{
+    .logmein{
         border-radius: 20px  65px!important; 
         background-color: rgb(42, 49, 61) !important;
         position: relative;
@@ -49,14 +50,14 @@ body{
         hr{
               border: .5px solid darken($textColor,20%)
           }  
-.men {
+        .men {
             text-align: center;
             margin: 0 !important;
             padding: 0 !important; 
-img{
+            img{
                 position: absolute; 
                 z-index: 999; 
-                background-color: rgb(255, 255, 255); 
+                background: lighten($bgTemplate, 70%);
                 width: 100px; 
                 top: -60px;
                 left: calc(100%/2 - 50px);
