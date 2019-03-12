@@ -43,12 +43,14 @@
                 </li>
                 <li>
                     <a href="#">Job Favorites</a>
+
                 </li>
                 <li>
                     <a href="#">My Account</a>
+
                 </li>
                 <li>
-                    <a href="#">Resume</a>
+                    <a href="#">My Account</a>
                 </li>
             </ul>
 
@@ -83,6 +85,7 @@
 
             </nav>
 
+
             <form class="form-inline searchBar">
                 <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Keywords"
                     aria-label="Search">
@@ -92,6 +95,15 @@
             </form>
 
             <div class="row" id="results-div">
+                <div class="col-md-9 mx-4 searchResult">
+
+            <form class="form-inline searchBar">
+                <input class="form-control mr-sm-2" type="search" placeholder="keywords" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="city or zipcode" aria-label="Search">
+                <button class="btn  my-1 mx-sm-0 mx-md-2" type="submit">Search</button>
+            </form>
+
+            <div class="row">
                 <div class="col-md-9 mx-4 searchResult">
                     <!-- New Card -->
                     <div class="card">
@@ -108,11 +120,38 @@
                             <b>Date posted: </b> 3/11/2019 <br>
                         </div>
                     </div>
+
+
+                    <!-- New Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <b>Job Title</b>
+                        </div>
+                        <div class="card-body">
+                            <b>Job Description</b>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis temporibus tempore
+                                officia inventore illum quo nulla repellendus esse cumque aliquid. Assumenda at sed,
+                                veritatis distinctio non voluptate natus molestias unde?</p>
+                            <b>Salary: </b> 45/h <br>
+                            <b>Job type: </b>Full Time<br>
+                            <b>Date posted: </b> 3/11/2019 <br>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-md-2 ml-4 ">
                 <div class="card filterBox">
                     <div class="card-body">
+
+
+
+                </div>
+                <div class="col-md-2 ml-4 ">
+                    <div class="card filterBox">
+                        <div class="card-body">
+
+                        </div>
 
                     </div>
                 </div>
@@ -122,15 +161,23 @@
 
     </div>
     <div class="container">
-        <div class="row" id="signInFooter">
-            <div class="col-md-5">
-                <img src="assets/images/github.gif" id="gitImg" alt="">
+        <div class="row text-center" id="signInFooter">
+            <div class="col-sm-4 text-center">
+                <a href="http://www.github.com"> <img src="assets/images/github.gif" id="gitImg" alt="github"></a>
             </div>
+
             <div class="col-md-5">
                 <img src="assets/images/geoip.jpg" id="geoIpImg" alt="">
             </div>
             <div class="col-md-2">
                 <img src="assets/images/jooble.png" id="joobleImg" alt="">
+
+            <div class="col-sm-4 text-center">
+                <a href="https://www.geoip.co.uk/"><img src="assets/images/geoip.jpg" id="geoIpImg" alt="geoip"></a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a href="https://us.jooble.org/"><img src="assets/images/jooble.png" id="joobleImg" alt="jooble"></a>
+
             </div>
         </div>
 
