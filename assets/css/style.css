@@ -70,7 +70,7 @@ body {
 .logmein .men img {
   position: absolute;
   z-index: 999;
-  background: #e1e5eb;
+  background: #3f5c88;
   width: 100px;
   top: -60px;
   left: calc(100%/2 - 50px);
