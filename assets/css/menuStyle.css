@@ -242,6 +242,22 @@ a[data-toggle="collapse"] {
   line-height: 1em;
   color: #708fbd;
 }
+/* ==========footer========= */
+#logInFooter{
+  background-color: clear;
+}
+#gitImg{
+  border-radius: 50%;
+  padding:10px 0;
+}
+#geoIpImg{
+  border-radius: 50%;
+  padding:10px 0;
+}
+#joobleImg{
+  border-radius: 50%;
+  padding:10px 0;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
