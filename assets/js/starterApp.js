@@ -40,17 +40,15 @@ $("#signUp").on("click", function (event) {
 });
 
 // get parameters from user's input for LFW
-$("#lfw-button").on("click", function (event) {
+$("#searchLisings").on("click", function (event) {
   // prevents page refresh
   event.preventDefault();
-  var titleSearch = $("#jobTitleSearchParam").val().trim();
-  var locationSearch = $("#locationSearchParam").val().trim();
-  var salarySearch = $("#salarySearchParam").val().trim();
+  var titleSearch = $("#search-input").val().trim();
+  var locationSearch = $("#city-input").val().trim();
   console.log(titleSearch);
   console.log(locationSearch);
-  console.log(salarySearch);
 
-  var results = joobleSearch(titleSearch, locationSearch, salarySearch);
+  var results = joobleSearch(titleSearch, locationSearch);
   console.log(results);
 })
 
@@ -59,7 +57,7 @@ function joobleSearch(title, location, salary) {
   var key = "63e7fe87-63ba-4b2b-9b1a-35a3e3d71f97";
   // params temp variable used to construct actual params variable with user's input
   // var params = "{ keywords: 'Job title', location: 'Location', salary: 'number'}";
-  var params = "{keywords: '" + title + "', location: '" + location + "', salary: '" + salary + "'}";
+  var params = "{keywords: '" + title + "', location: '" + location + "'}";
 
   //create xmlHttpRequest object
   var http = new XMLHttpRequest();
