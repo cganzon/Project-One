@@ -41,17 +41,19 @@ function joobleSearch(title, location) {
             // card header div
             var headerHolder = $("<div>")
             headerHolder.addClass("card-header")
-            var cardHeader = $("<h3>").text("Company: " + jsonResponse.jobs[i].company);
+            var cardHeader = $("<h3>").html("<strong>" + jsonResponse.jobs[i].title + "</strong>");
             headerHolder.append(cardHeader);
             // card body div
             var cardBody = $("<div>");
             cardBody.addClass("card-body");
+            var company = $("<h4>").html("<strong>Company: </strong>" + jsonResponse.jobs[i].company);
             var description = $("<p>").html(jsonResponse.jobs[i].snippet);
-            var salary = $("<p>").html(jsonResponse.jobs[i].salary)
+            var jobType = $("<p>").html("<strong>Job Type:</strong> " + jsonResponse.jobs[i].type)
+            var link = $("<p>").html("<strong>Link:</strong> <a href=" + jsonResponse.jobs[i].link + " target='_blank'>Take me to the post!</a>")
+            cardBody.append(company);
             cardBody.append(description);
-            cardBody.append(salary);
-
-            
+            cardBody.append(jobType);
+            cardBody.append(link);         
             card.append(headerHolder);
             card.append(cardBody);
             $("#results-div").append(card);
@@ -61,30 +63,4 @@ function joobleSearch(title, location) {
     };
     //Send request to the server
     http.send(params);
-
-    // var url = "https://us.jooble.org/api/";
-    // var key = "63e7fe87-63ba-4b2b-9b1a-35a3e3d71f97";
-    // // params temp variable used to construct actual params variable with user's input
-    // // var params = "{ keywords: 'Job title', location: 'Location', salary: 'number'}";
-    // var params = "{keywords: '" + title + "', location: '" + location + "'}";
-
-    // //create xmlHttpRequest object
-    // var http = new XMLHttpRequest();
-    // //open connection. true - asynchronous, false - synchronous
-    // http.open("POST", url + key, true);
-
-    // //Send the proper header information
-    // http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    // //Callback when the state changes
-    // http.onreadystatechange = function () {
-    //     if (http.readyState == 4 && http.status == 200) {
-    //         var jsonResponse = JSON.parse(http.responseText);
-    //         console.log(jsonResponse);
-    //         // need to display title, location, salary, and job link in cards on results page
-    //         database.ref("/Job Listings/" + title + " Listings").push(jsonResponse);
-    //     }
-    // }
-    // //Send request to the server
-    // http.send(params);
 }
