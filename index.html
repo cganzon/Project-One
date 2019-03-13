@@ -13,7 +13,6 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/menuStyle.css">
-
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -79,9 +78,7 @@
                         </ul>
                     </div>
                 </div>
-
             </nav>
-
 
             <form class="form-inline searchBar">
                 <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Keywords"
@@ -91,13 +88,9 @@
                 <button class="btn  my-1 mx-sm-0 mx-md-2" id="searchListings" type="submit">Search</button>
             </form>
 
-            <div class="row" id="results-div">
-                <div class="col-md-9 mx-4 searchResult">
-
-                    <div class="row">
-                        <div class="col-md-9 mx-4 searchResult">
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-9 mx-4" id="results-div">
+                    <!-- Results from Jooble API go here -->
                 </div>
             </div>
             <div class="container">
@@ -116,19 +109,12 @@
                     </div>
                 </div>
             </div>
+
             <!-- jQuery CDN - Slim version (=without AJAX) -->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
-            <!-- Popper.JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-                crossorigin="anonymous"></script>
-            <!-- Bootstrap JS -->
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-                crossorigin="anonymous"></script>
-
+            <!-- JS to get side navbar to collapse and reapper -->
             <script type="text/javascript">
                 $(document).ready(function () {
                     $('#sidebarCollapse').on('click', function () {
@@ -137,9 +123,19 @@
                     });
                 });
             </script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+                crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+                crossorigin="anonymous"></script>
+            <!-- Firebase -->
             <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="assets/js/starterApp.js"></script>
+            <script src="assets/js/location.js"></script>
             <script src="assets/js/jooble.js"></script>
 </body>
 
