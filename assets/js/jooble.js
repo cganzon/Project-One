@@ -2,6 +2,7 @@
 $("#searchListings").on("click", function (event) {
     // prevents page refresh
     event.preventDefault();
+    $("#results-div").empty();
     var titleSearch = $("#search-input").val().trim();
     var locationSearch = $("#city-input").val().trim();
     console.log(titleSearch);
@@ -37,7 +38,7 @@ function joobleSearch(title, location) {
 
             // card div
             var card = $("<div>");
-            card.addClass("card");
+            card.addClass("card mt-4 mb-4");
             // card header div
             var headerHolder = $("<div>")
             headerHolder.addClass("card-header")

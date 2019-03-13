@@ -13,7 +13,6 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/menuStyle.css">
-
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -79,9 +78,7 @@
                         </ul>
                     </div>
                 </div>
-
             </nav>
-
 
             <form class="form-inline searchBar">
                 <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Keywords"
@@ -91,13 +88,9 @@
                 <button class="btn  my-1 mx-sm-0 mx-md-2" id="searchListings" type="submit">Search</button>
             </form>
 
-            <div class="row" id="results-div">
-                <div class="col-md-9 mx-4 searchResult">
-
-                    <div class="row">
-                        <div class="col-md-9 mx-4 searchResult">
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-9 mx-4" id="results-div">
+                    <!-- Results from Jooble API go here -->
                 </div>
             </div>
             <div class="container">
@@ -140,6 +133,7 @@
             <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="assets/js/starterApp.js"></script>
+            <script src="assets/js/location.js"></script>
             <script src="assets/js/jooble.js"></script>
 </body>
 
