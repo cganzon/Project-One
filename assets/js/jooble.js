@@ -5,8 +5,8 @@ $("#searchListings").on("click", function (event) {
     $("#results-div").empty();
     var titleSearch = $("#search-input").val().trim();
     var locationSearch = $("#city-input").val().trim();
-    console.log(titleSearch);
-    console.log(locationSearch);
+    // console.log(titleSearch);
+    // console.log(locationSearch);
 
     joobleSearch(titleSearch, locationSearch);
 })
@@ -14,7 +14,7 @@ $("#searchListings").on("click", function (event) {
 function joobleSearch(title, location) {
     var url = "https://us.jooble.org/api/";
     var key = "658afad6-3648-4833-b4cd-b17ef82e21ce";
-    // var params = "{ keywords: 'Web Developer', location: 'San Diego, CA'}"
+    // var paramsTemplate = "{ keywords: 'Web Developer', location: 'San Diego, CA'}"
     var params = "{keywords: '" + title + "', location: '" + location + "'}";
 
     //create xmlHttpRequest object
@@ -29,12 +29,12 @@ function joobleSearch(title, location) {
     http.onreadystatechange = function () {
         if (http.readyState == 4 && http.status == 200) {
             var jsonResponse = JSON.parse(http.responseText);
-            console.log(jsonResponse);
+            // console.log(jsonResponse);
             for (var i = 0; i < jsonResponse.jobs.length; i++) {
-            console.log(jsonResponse.jobs[i].company);
-            console.log(jsonResponse.jobs[i].title);
-            console.log(jsonResponse.jobs[i].snippet);
-            console.log(jsonResponse.jobs[i].type);
+            // console.log(jsonResponse.jobs[i].company);
+            // console.log(jsonResponse.jobs[i].title);
+            // console.log(jsonResponse.jobs[i].snippet);
+            // console.log(jsonResponse.jobs[i].type);
 
             // card div
             var card = $("<div>");
