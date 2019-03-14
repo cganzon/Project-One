@@ -22,8 +22,8 @@ function getCurrentLocation(callback){
 
 
 getCurrentLocation(function(result){
-    console.log(result.country);
-    console.log(result.state);
-    console.log(result.city);
-    console.log(result.postal);
+    // console.log(result.country);
+    // console.log(result.state);
+    // console.log(result.city);
+    // console.log(result.postal);
 });

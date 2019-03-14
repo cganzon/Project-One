@@ -5,6 +5,12 @@ body {
   background: #e1e5eb;
 }
 
+#indexHeader{
+  text-align: center;
+  height: 50px;
+  color: #2a313d;
+}
+
 .text-color {
   color: #708fbd;
 }
